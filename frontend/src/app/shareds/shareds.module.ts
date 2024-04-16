@@ -20,5 +20,8 @@ import { AuthSidebarComponent } from './components/auth-sidebar/auth-sidebar.com
     AuthSidebarComponent,
     BsDropdownModule
   ],
+  providers:[
+    { provide: BsDropdownConfig, useValue: { isAnimated: true, autoClose: true } }
+  ],
 })
 export class SharedsModule { }

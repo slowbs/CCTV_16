@@ -25,7 +25,6 @@ import { SharedsModule } from './shareds/shareds.module';
   ],
   providers: [
     provideClientHydration(),
-    { provide: BsDropdownConfig, useValue: { isAnimated: true, autoClose: true } }
   ],
   bootstrap: [AppComponent]
 })
