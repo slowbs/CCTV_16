@@ -21,7 +21,7 @@ import { SharedsModule } from './shareds/shareds.module';
     AppRouting,
     AppRoutingModule,
     BrowserAnimationsModule,
-    SharedsModule,
+    SharedsModule
   ],
   providers: [
     provideClientHydration(),

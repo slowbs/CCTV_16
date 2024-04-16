@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BsDropdownModule } from 'ngx-bootstrap/dropdown/bs-dropdown.module';
+import { BsDropdownConfig, BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { AuthNavbarComponent } from './components/auth-navbar/auth-navbar.component';
 import { AuthSidebarComponent } from './components/auth-sidebar/auth-sidebar.component';
 
@@ -13,10 +13,12 @@ import { AuthSidebarComponent } from './components/auth-sidebar/auth-sidebar.com
   ],
   imports: [
     CommonModule,
+    BsDropdownModule.forRoot()
   ],
   exports: [
     AuthNavbarComponent,
-    AuthSidebarComponent
-  ]
+    AuthSidebarComponent,
+    BsDropdownModule
+  ],
 })
 export class SharedsModule { }
