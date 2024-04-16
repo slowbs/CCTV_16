@@ -8,6 +8,7 @@ import { BsDropdownConfig, BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { AppRouting } from './app.routing';
+import { SharedsModule } from './shareds/shareds.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { AppRouting } from './app.routing';
     AppRouting,
     AppRoutingModule,
     BrowserAnimationsModule,
-    BsDropdownModule.forRoot()
+    SharedsModule,
   ],
   providers: [
     provideClientHydration(),
