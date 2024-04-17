@@ -2,8 +2,6 @@ import { Routes, RouterModule } from "@angular/router";
 import { AppURL } from "./app.url";
 import { LoginComponent } from "./components/login/login.component";
 import { RegisterComponent } from "./components/register/register.component";
-import { Test1Component } from "./components/test1/test1.component";
-import { Test2Component } from "./components/test2/test2.component";
 
 const RouteLists: Routes = [
     { path: '', redirectTo: AppURL.Login, pathMatch: 'full' },

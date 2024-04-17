@@ -9,16 +9,12 @@ import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { AppRouting } from './app.routing';
 import { SharedsModule } from './shareds/shareds.module';
-import { Test1Component } from './components/test1/test1.component';
-import { Test2Component } from './components/test2/test2.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    Test1Component,
-    Test2Component
   ],
   imports: [
     BrowserModule,
