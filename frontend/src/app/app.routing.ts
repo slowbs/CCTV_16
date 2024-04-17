@@ -11,8 +11,6 @@ const RouteLists: Routes = [
     { path: AppURL.Register, component: RegisterComponent },
     // { path: AppURL.Authen, loadChildren: 'authentication/authentication.module#AuthenticationModule'}
     { path: AppURL.Authen, loadChildren: () => import('./authentication/authentication.module').then(x => x.AuthenticationModule)},
-    { path: AppURL.Test1, component: Test1Component},
-    { path: AppURL.Test2, component: Test2Component}
     
 ];
 
