@@ -1,4 +1,5 @@
 export const AuthenticationURL = {
-    Dashboard: 'dashboard'
+    Dashboard: 'dashboard',
+    Index: 'index'
 
 }
