@@ -3,13 +3,15 @@ import { CommonModule } from '@angular/common';
 import { BsDropdownConfig, BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { AuthNavbarComponent } from './components/auth-navbar/auth-navbar.component';
 import { AuthSidebarComponent } from './components/auth-sidebar/auth-sidebar.component';
+import { AuthContentComponent } from './components/auth-content/auth-content.component';
 
 
 
 @NgModule({
   declarations: [
     AuthNavbarComponent,
-    AuthSidebarComponent
+    AuthSidebarComponent,
+    AuthContentComponent
   ],
   imports: [
     CommonModule,
@@ -18,6 +20,7 @@ import { AuthSidebarComponent } from './components/auth-sidebar/auth-sidebar.com
   exports: [
     AuthNavbarComponent,
     AuthSidebarComponent,
+    AuthContentComponent,
     BsDropdownModule
   ],
   providers:[
