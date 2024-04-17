@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+declare const App : any;
 
 @Component({
   selector: 'app-auth-content',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AuthContentComponent {
 
+  ngOnInit(): void {
+    App.initialLoadPage();
+  }
 }
